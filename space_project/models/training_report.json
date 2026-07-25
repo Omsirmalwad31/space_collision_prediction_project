@@ -1,0 +1,84 @@
+{
+  "data_source": "esa_kelvins_cdm",
+  "n_train": 162634,
+  "n_test": 24484,
+  "mae": 23.86,
+  "feature_importances": {
+    "miss_distance_km": 0.13153177691119924,
+    "relative_velocity_kms": 0.05536617562062709,
+    "tca_hours_from_now": 0.743784676350252,
+    "size_class": 0.06931737111792158
+  },
+  "calibration": [
+    {
+      "bin_lo": 0.0,
+      "bin_hi": 10.0,
+      "mean_predicted": 9.066252342498,
+      "mean_actual": 14.384242567395471,
+      "count": 22
+    },
+    {
+      "bin_lo": 10.0,
+      "bin_hi": 20.0,
+      "mean_predicted": 17.146313712806982,
+      "mean_actual": 12.11817233471129,
+      "count": 1539
+    },
+    {
+      "bin_lo": 20.0,
+      "bin_hi": 30.0,
+      "mean_predicted": 25.02300083676341,
+      "mean_actual": 22.971691682669313,
+      "count": 4032
+    },
+    {
+      "bin_lo": 30.0,
+      "bin_hi": 40.0,
+      "mean_predicted": 35.03599888151037,
+      "mean_actual": 33.33626723472169,
+      "count": 3822
+    },
+    {
+      "bin_lo": 40.0,
+      "bin_hi": 50.0,
+      "mean_predicted": 45.04143662615026,
+      "mean_actual": 45.37298562694486,
+      "count": 4405
+    },
+    {
+      "bin_lo": 50.0,
+      "bin_hi": 60.0,
+      "mean_predicted": 55.230630702689716,
+      "mean_actual": 57.398670415040804,
+      "count": 5499
+    },
+    {
+      "bin_lo": 60.0,
+      "bin_hi": 70.0,
+      "mean_predicted": 64.09856533355874,
+      "mean_actual": 65.76666451423716,
+      "count": 4724
+    },
+    {
+      "bin_lo": 70.0,
+      "bin_hi": 80.0,
+      "mean_predicted": 72.38853671275832,
+      "mean_actual": 73.36556407560454,
+      "count": 408
+    },
+    {
+      "bin_lo": 80.0,
+      "bin_hi": 90.0,
+      "mean_predicted": 82.80676344701014,
+      "mean_actual": 82.01165497650717,
+      "count": 33
+    }
+  ],
+  "model_params": {
+    "n_estimators": 200,
+    "max_depth": 3,
+    "learning_rate": 0.05,
+    "random_state": 42
+  },
+  "note": "MAE of 23.9 points is an honest result for this 4-feature model on noisy Pc data. This is observed on the test split, not a guarantee of operational accuracy."
+}
